@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>    
+<body><br>
+    <form action="URL">
+        <fieldset style="width: 500px;">
+            <legend>Alap adatok</legend><br>
+
+            <label for="lname">Vezetéknév:</label><br>
+            <input type="text" id="lname" name="lname"><br><br>
+
+            <label for="fname">Keresztnév:</label><br>
+            <input type="text" id="fname" name="fname"><br><br>
+
+            <label for="email">E-mail:*</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="phone">Telefonszám:</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="+36 30 123 4567" pattern="[\+](36)(20|30|70)\d{7}"><br><br>
+            </fieldset>
+            <br>
+        <fieldset style="width: 500px;">
+            <legend>Postai cím</legend><br>
+            <label for="zipcode"></label>
+            <input type="number" id="zipcode" name="zipcode" placeholder="irányítószám">
+            <label for="city"></label>
+            <select id="city" name="city">
+            <option value="varos">Város</option>
+            <option value="budapest">Budapest</option>
+            <option value="szeged">Szeged</option>
+            <option value="sopron">Sopron</option>
+            </select>
+            <label for="kerulet"></label>
+            <select id="kerulet" name="kerulet">
+            <option value="kerulet">kerület</option>
+            <option value="one">I.</option>
+            <option value="two">II.</option>
+            <option value="three">III.</option>
+            </select>
+            <br>
+            <br>
+            <label for="address">Cím:</label><br>
+            <input type="text" id="address" name="address">
+        </fieldset>
+        <fieldset style="width: 600px;">
+            <legend>Kérdőív</legend><br>
+            Leginkább: *<br>
+            <input type="radio" id="bolt" name="bolt" value="bolt1" required>
+            <label for="bolt">Boltokban vásárolok</label><br>
+            <input type="radio" id="Internet" name="Internet" value="Internet1" required>
+            <label for="Internet">Interneten vásárolok</label><br><br>
+            Ha a háztartásába vesz dolgokat, akkor azokat ... vásárolja:<br>
+            <input type="checkbox" id="diszkont" name="diszkont" value="diszkont1">
+            <label for="haztartas">Diszkontban</label><br>
+
+            <input type="checkbox" id="haztartas" name="haztartas" value="haztartas1">
+            <label for="weben">Háztartási üzletben</label><br>
+
+            <input type="checkbox" id="weben" name="weben" value="weben1">
+            <label for="szupermarket">Interneten</label><br>
+
+            <input type="checkbox" id="szupermarket" name="szupermarket" value="szupermarket1">
+            <label for="szupermarket">Szupermarketekben</label><br>
+
+            <input type="checkbox" id="hipermarket" name="hipermarket" value="hipermarket1">
+            <label for="hipermarket">Hipermarketekben</label><br>
+
+            <input type="checkbox" id="bevasarlokozpont" name="bevasarlokozpont" value="bevasarlokozpont">
+            <label for="bevasarlokozpont">Bevásárlóközpontban</label>
+            <br>
+            <br>
+            Írja le kérem, mi javíthatnánk:
+            <label for="textbox"></label><br>
+            <input type="text" id="textbox" name="textbox" style="width: 580px; height: 70px;"><br><br>
+        </fieldset>
+        <br>
+        <button type="reset">Reset</button>
+        <button type="submit">Küldés</button>
+    </form>
+    
+
+</body>
+</html>
